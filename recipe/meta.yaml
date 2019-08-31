@@ -12,12 +12,13 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  noarch_python: True
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  noarch: python
+  number: 1
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
-  build:
+  host:
+    - pip
     - python
     - setuptools
     - pyvisa >=1.8

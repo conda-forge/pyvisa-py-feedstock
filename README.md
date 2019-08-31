@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About pyvisa-py
 ===============
 
@@ -18,9 +14,15 @@ Summary: Python VISA bindings for GPIB, RS232, and USB instruments
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/pyvisa-py-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/pyvisa-py-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/pyvisa-py-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/pyvisa-py-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/pyvisa-py-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/pyvisa-py-feedstock/branch/master)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4991&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyvisa-py-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
