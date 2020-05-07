@@ -1,6 +1,6 @@
 {% set name = "PyVISA-py" %}
-{% set version = "0.3.1" %}
-{% set sha256 = "1c918650a770a634434f6e8e0e1c097b5f0f80dc23bc60d3779c9890b4aa9150" %}
+{% set version = "0.4.0" %}
+{% set sha256 = "a27b509a626607cd21e871cbf2ca2df63422937f4621038a8ca8c30cdb688f61" %}
 
 package:
   name: {{ name|lower }}
@@ -13,8 +13,8 @@ source:
 
 build:
   noarch: python
-  number: 2
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -40,9 +40,9 @@ about:
   home: https://github.com/hgrecco/pyvisa-py
   license: MIT
   license_file: LICENSE
-  summary: 'Python VISA bindings for GPIB, RS232, and USB instruments'
+  summary: Python VISA bindings for GPIB, RS232, and USB instruments
   license_family: MIT
 
 extra:
   recipe-maintainers:
-      - greyltc
+    - greyltc
