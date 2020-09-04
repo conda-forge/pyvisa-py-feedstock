@@ -31,11 +31,11 @@ requirements:
 
 test:
   imports:
-    - pyvisa_py
-    - pyvisa_py.testsuite
+    - pyvisa
+    - pyvisa.testsuite
   commands:
     - pip check
-    - python -c "import pyvisa_py.testsuite as ts; ts.run()"
+    - python -c "import pyvisa.testsuite as ts; ts.run()"
   requires:
     - pip
     - pytest
