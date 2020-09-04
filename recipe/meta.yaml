@@ -32,7 +32,6 @@ requirements:
 test:
   imports:
     - pyvisa
-    - pyvisa.protocols
     - pyvisa.testsuite
   commands:
     - pip check
