@@ -1,48 +1,60 @@
 {% set name = "PyVISA-py" %}
-{% set version = "0.3.1" %}
-{% set sha256 = "1c918650a770a634434f6e8e0e1c097b5f0f80dc23bc60d3779c9890b4aa9150" %}
+{% set version = "0.4.1" %}
+
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 4b60d984906c1957c70044b5e5c5eac02e560d0bce678f81af26630bdf38be90
 
 build:
   noarch: python
-  number: 2
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 0
+  script:
+    - {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - pip
     - python
+    - pip
     - setuptools
-    - pyvisa >=1.8
-
   run:
     - python
-    - pyvisa >=1.8
-    - pyserial # optional
-    #- pyusb # optional
+    - pyvisa >=1.10.1
+    - pyserial
+    - pyusb
+    - typing_extensions
+    - importlib-metadata
 
 test:
   imports:
     - pyvisa
-
+    - pyvisa.testsuite
   commands:
+    - pip check
     - python -c "import pyvisa.testsuite as ts; ts.run()"
+  requires:
+    - pip
+    - pytest
 
 about:
-  home: https://github.com/hgrecco/pyvisa-py
+  home: https://github.com/pyvisa/pyvisa-py
   license: MIT
-  license_file: LICENSE
-  summary: 'Python VISA bindings for GPIB, RS232, and USB instruments'
   license_family: MIT
+  license_file: LICENSE
+  summary: Python VISA bindings for GPIB, RS232, and USB instruments
+
+  description: |
+    A PyVISA backend that implements a large part of the "Virtual
+    Instrument Software Architecture" (VISA) in pure Python (with the
+    help of some nice cross platform libraries python packages!).
+  doc_url: https://rpyc.readthedocs.io/
+  dev_url: https://github.com/pyvisa/pyvisa-py
 
 extra:
   recipe-maintainers:
-      - greyltc
+    - mtsolmn
+    - greyltc
