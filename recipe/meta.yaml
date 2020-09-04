@@ -31,9 +31,9 @@ requirements:
 
 test:
   imports:
-    - pyvisa-py
-    - pyvisa-py.protocols
-    - pyvisa-py.testsuite
+    - pyvisa
+    - pyvisa.protocols
+    - pyvisa.testsuite
   commands:
     - pip check
     - python -c "import pyvisa.testsuite as ts; ts.run()"
