@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script:
     - {{ PYTHON }} -m pip install . -vv
 
@@ -36,6 +36,7 @@ test:
   commands:
     - pip check
     - python -c "import pyvisa.testsuite as ts; ts.run()"
+    - python -c "import visa; rm = visa.ResourceManager('@py')"
   requires:
     - pip
     - pytest
