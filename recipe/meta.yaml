@@ -36,12 +36,11 @@ test:
   commands:
     #- pip check
     - python -c "import pyvisa.testsuite as ts; ts.run()"
-    - python -c "import visa; rm = visa.ResourceManager('@py')"
+    - python -c "import pyvisa; rm = pyvisa.ResourceManager('@py')"
   requires:
     - pip
     - pytest
     - pyvisa
-    - pyvisa-py
 
 about:
   home: https://github.com/pyvisa/pyvisa-py
