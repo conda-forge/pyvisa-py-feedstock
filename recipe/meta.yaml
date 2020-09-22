@@ -44,7 +44,6 @@ test:
   requires:
     - pip
     - pytest
-    - pyvisa
 
 about:
   home: https://github.com/pyvisa/pyvisa-py
