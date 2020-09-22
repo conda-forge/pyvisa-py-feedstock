@@ -41,6 +41,7 @@ test:
     - pip
     - pytest
     - pyvisa
+    - pyvisa-py
 
 about:
   home: https://github.com/pyvisa/pyvisa-py
