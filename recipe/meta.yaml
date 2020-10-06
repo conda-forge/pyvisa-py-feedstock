@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script:
     - {{ PYTHON }} -m pip install . -vv
 
@@ -21,6 +21,7 @@ requirements:
     - python
     - pip
     - setuptools
+    - setuptools_scm
   run:
     - python
     - pyvisa >=1.10.1
