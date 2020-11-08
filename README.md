@@ -5,9 +5,13 @@ Home: https://github.com/pyvisa/pyvisa-py
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyvisa-py-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python VISA bindings for GPIB, RS232, and USB instruments
+
+Development: https://github.com/pyvisa/pyvisa-py
+
+Documentation: https://rpyc.readthedocs.io/
 
 A PyVISA backend that implements a large part of the "Virtual
 Instrument Software Architecture" (VISA) in pure Python (with the
@@ -119,6 +123,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@greyltc](https://github.com/greyltc/)
+* [@MatthieuDartiailh](https://github.com/MatthieuDartiailh/)
 * [@mtsolmn](https://github.com/mtsolmn/)
+* [@greyltc](https://github.com/greyltc/)
 
