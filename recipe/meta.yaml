@@ -37,8 +37,8 @@ test:
   commands:
     # fails because of wrong versioning number in seutp.cfg
     # issue raised with project maintainers
-    # - pip check
-    - python -c "import pyvisa.testsuite as ts; ts.run()"
+    - pip check
+    - python -c "import pyvisa.testsuite.testsuite as ts; ts.run()"
     # backend issue with running the below test due to how
     # docker runs and pyvisa detects available visa backends
     # - python -c "import pyvisa; rm = pyvisa.ResourceManager('@py')"
@@ -62,5 +62,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - MatthieuDartiailh
     - mtsolmn
     - greyltc
