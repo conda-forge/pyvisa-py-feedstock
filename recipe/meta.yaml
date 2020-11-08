@@ -23,8 +23,8 @@ requirements:
     - setuptools
     - setuptools_scm
   run:
-    - python
-    - pyvisa >=1.11
+    - python >=3.6
+    - pyvisa >=1.11.0
     - pyserial
     - pyusb
     - typing_extensions
@@ -41,7 +41,7 @@ test:
     # fails because of wrong versioning number in seutp.cfg
     # issue raised with project maintainers
     - pip check
-    - python -c "import pyvisa_py.testsuite as ts; ts.testsuite.run()"
+    - python -c "import pyvisa_py.testsuite as ts; ts.testsuite().run()"
     # backend issue with running the below test due to how
     # docker runs and pyvisa detects available visa backends
     # - python -c "import pyvisa; rm = pyvisa.ResourceManager('@py')"
