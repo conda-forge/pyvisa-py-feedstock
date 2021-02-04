@@ -124,6 +124,6 @@ Feedstock Maintainers
 =====================
 
 * [@MatthieuDartiailh](https://github.com/MatthieuDartiailh/)
-* [@mtsolmn](https://github.com/mtsolmn/)
 * [@greyltc](https://github.com/greyltc/)
+* [@mtsolmn](https://github.com/mtsolmn/)
 
