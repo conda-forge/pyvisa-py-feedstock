@@ -1,11 +1,11 @@
-About pyvisa-py
-===============
+About pyvisa-py-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyvisa-py-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pyvisa/pyvisa-py
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyvisa-py-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python VISA bindings for GPIB, RS232, and USB instruments
 
