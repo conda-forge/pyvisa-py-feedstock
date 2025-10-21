@@ -49,6 +49,7 @@ test:
     - python {{ python_min }}
     - pip
     - pytest
+    - pyvisa >=1.15.0
 
 about:
   home: https://github.com/pyvisa/pyvisa-py
