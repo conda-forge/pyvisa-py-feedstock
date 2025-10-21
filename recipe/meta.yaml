@@ -1,5 +1,5 @@
 {% set name = "PyVISA-py" %}
-{% set version = "0.8.0" %}
+{% set version = "0.8.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') | lower }}-{{ version }}.tar.gz
-  sha256: cfadb9faeb9499e53ce52d9d7f1558e6663e78f7f0431c775aa49ce925e08917
+  sha256: db53d3219d971d16b8f7c764a93e08475875063635b9ad8ea3c988439833ccdd
 
 build:
   noarch: python
