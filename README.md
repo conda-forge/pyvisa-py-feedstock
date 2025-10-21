@@ -11,7 +11,7 @@ Summary: Python VISA bindings for GPIB, RS232, and USB instruments
 
 Development: https://github.com/pyvisa/pyvisa-py
 
-Documentation: https://rpyc.readthedocs.io/
+Documentation: https://pyvisa.readthedocs.io/projects/pyvisa-py/en/latest/
 
 A PyVISA backend that implements a large part of the "Virtual
 Instrument Software Architecture" (VISA) in pure Python (with the
