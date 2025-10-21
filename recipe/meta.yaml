@@ -24,7 +24,7 @@ requirements:
     - setuptools_scm
   run:
     - python >={{ python_min }}
-    - pyvisa >=1.14.0
+    - pyvisa >=1.15.0
     - pyserial
     - pyusb
     - typing_extensions
@@ -61,7 +61,7 @@ about:
     A PyVISA backend that implements a large part of the "Virtual
     Instrument Software Architecture" (VISA) in pure Python (with the
     help of some nice cross platform libraries python packages!).
-  doc_url: https://rpyc.readthedocs.io/
+  doc_url: https://pyvisa.readthedocs.io/projects/pyvisa-py/en/latest/
   dev_url: https://github.com/pyvisa/pyvisa-py
 
 extra:
