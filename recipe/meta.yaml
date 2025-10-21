@@ -46,9 +46,9 @@ test:
     # docker runs and pyvisa detects available visa backends
     # - python -c "import pyvisa; rm = pyvisa.ResourceManager('@py')"
   requires:
+    - python {{ python_min }}
     - pip
     - pytest
-    - python {{ python_min }}
 
 about:
   home: https://github.com/pyvisa/pyvisa-py
